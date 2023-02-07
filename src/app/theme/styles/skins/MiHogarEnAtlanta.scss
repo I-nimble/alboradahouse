@@ -1,0 +1,116 @@
+// @import '~@angular/material/theming';
+
+// @include mat-core();
+
+// $primary-color: (
+//     50 : #e7edf1,
+//     100 : #c4d1dd,
+//     200 : #9db3c6,
+//     300 : #7594af,
+//     400 : #587d9d,
+//     500 : #3a668c,
+//     600 : #345e84,
+//     700 : #2c5379,
+//     800 : #25496f,
+//     900 : #18385c,
+//     A100 : #98c4ff,
+//     A200 : #65a7ff,
+//     A400 : #328aff,
+//     A700 : #197bff,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #ffffff,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #ffffff,
+//         A700 : #ffffff,
+//     )
+// );
+
+// $accent-color: (
+//     50 : #e0f0f0,
+//     100 : #b3d9d9,
+//     200 : #80c0c0,
+//     300 : #4da6a6,
+//     400 : #269393,
+//     500 : #008080,
+//     600 : #007878,
+//     700 : #006d6d,
+//     800 : #006363,
+//     900 : #005050,
+//     A100 : #83ffff,
+//     A200 : #50ffff,
+//     A400 : #1dffff,
+//     A700 : #03ffff,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #ffffff,
+//         500 : #ffffff,
+//         600 : #ffffff,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
+
+// $warn-color: (
+//     50 : #fbeded,
+//     100 : #f6d1d1,
+//     200 : #f0b3b3,
+//     300 : #e99494,
+//     400 : #e57d7d,
+//     500 : #e06666,
+//     600 : #dc5e5e,
+//     700 : #d85353,
+//     800 : #d34949,
+//     900 : #cb3838,
+//     A100 : #ffffff,
+//     A200 : #ffe2e2,
+//     A400 : #ffafaf,
+//     A700 : #ff9696,
+//     contrast: (
+//         50 : #000000,
+//         100 : #000000,
+//         200 : #000000,
+//         300 : #000000,
+//         400 : #000000,
+//         500 : #000000,
+//         600 : #000000,
+//         700 : #ffffff,
+//         800 : #ffffff,
+//         900 : #ffffff,
+//         A100 : #000000,
+//         A200 : #000000,
+//         A400 : #000000,
+//         A700 : #000000,
+//     )
+// );
+
+// $palette-primary: mat-palette($primary-color);
+// $palette-accent: mat-palette($accent-color);
+// $palette-warn: mat-palette($warn-color);
+
+// $MiHogarEnAtlanta: mat-light-theme((
+//     color: (
+//         primary: $primary-color,
+//         accent: $accent-color,
+//         warn: $warn-color
+//     )
+// ));
+
+// @include angular-material-theme($MiHogarEnAtlanta);

@@ -1,0 +1,43 @@
+<div>
+    <div id="notification">
+    <img src="assets/images/others/robot.png" class="robot">
+    <div class="notification">
+    <span class="closebtn">&times;</span>
+    Bienvenido! nuestro Chatbot esta para servirte.
+</div>
+  </div> 
+<div id="chat-circle" class="btn btn-raised" (click)="openForm()">
+    <div id="chat-overlay"></div>
+    <i class="material-icons">chat</i>
+</div>
+</div>
+
+<div class="chat-box" id="chat-box">
+    <!-- <i class="fa fa-comments" aria-hidden="true"></i> -->
+    <div class="chat-box-header">
+        <img src="\assets\images\agents\carmela.png" class="chat-photo"><p>{{ 'ChatHeader' | translate}}</p>
+        <span class="chat-box-toggle" (click)="closeForm()"><i class="material-icons">close</i></span>
+    </div>
+    <div class="chat-box-body" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+<ng-container *ngFor="let message of messages">
+    <div class="message" [ngClass]="{ 'from': message.author === 'bot', 'to': message.author === 'user' }">
+        <span>{{ message.question }}</span>
+        <div *ngFor="let item of message.content | keyvalue">
+            <span>{{ item.key }}<br></span>
+            <div *ngFor="let option of item.value | keyvalue">
+                <button class="options" role="button" (click)="options(option.value)">{{ option.value }}</button>
+            </div>
+            <!-- <span *ngIf="option.value.includes('+1 (678) 744-8007')">+1 (678) 744-8007</span> -->
+        </div>
+    </div>
+</ng-container>
+</div>
+<!-- <div class="chat-input">
+    <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Your message</label>
+    <input id="chat-input" placeholder="Send a message..." [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text">
+    <button class="chat-submit" (click)="sendMessage()"><i class="material-icons">send</i></button>
+    <ng-template #dialogInfo>
+        <span [className]="'float-right'">Total messages: {{messages.length}}</span>
+    </ng-template>
+</div> -->
+</div>

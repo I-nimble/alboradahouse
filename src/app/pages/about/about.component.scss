@@ -1,0 +1,15 @@
+.testimonials-carousel{    
+    .swiper-container{
+        padding-bottom: 30px;
+        height: auto;
+        .content{
+            max-width: 650px;
+            margin: auto; 
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
