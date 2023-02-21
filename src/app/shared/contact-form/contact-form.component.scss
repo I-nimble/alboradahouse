@@ -79,15 +79,16 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #008080;
-  color: #FFF;
+  background: #0a79b0;
+  color: #fff;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
 }
 
 #contact button[type="submit"]:hover {
-  background: #43A047;
+  background: #0db7f2;
+  color: #FFF;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;

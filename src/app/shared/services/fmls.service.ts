@@ -22,11 +22,11 @@ export class FmlsService {
 
 
   getDataProperties(limit, offset){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=' + offset + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089').toPromise()
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=' + offset + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc').toPromise()
   }
 
   getDataProperties2(limit2, offset2){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089').toPromise()
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc').toPromise()
   }
 
   cleanData(data: any){
@@ -106,7 +106,7 @@ export class FmlsService {
   
   
   getListingKey(id){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings/'+ id + '?&access_token=952fdf0e9de6787bd55769f091ec3089')
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings/'+ id + '?&access_token=af4a076f5f40a608cb449aa8603422cc')
   }
 
   singleFmlsData(data: any){
@@ -177,34 +177,34 @@ export class FmlsService {
   }
 
   getDescend(limit){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=FMLS_CurrentPrice&order=desc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=FMLS_CurrentPrice&order=desc').toPromise();
   }
 
   getDescend2(limit2, offset2){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=FMLS_CurrentPrice&order=desc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=FMLS_CurrentPrice&order=desc').toPromise();
   }
 
   getAscend(limit){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=ListPrice&order=asc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=ListPrice&order=asc').toPromise();
   }
 
   getAscend2(limit2, offset2){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=ListPrice&order=asc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=ListPrice&order=asc').toPromise();
   }
 
   getOld(limit){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=DaysOnMarket&order=asc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=DaysOnMarket&order=asc').toPromise();
   }
 
   getOld2(limit2, offset2){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=DaysOnMarket&order=asc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=DaysOnMarket&order=asc').toPromise();
   }
 
   getNew(limit){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=DaysOnMarket&order=desc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit + '&offset=0&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=DaysOnMarket&order=desc').toPromise();
   }
 
   getNew2(limit2, offset2){
-    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=952fdf0e9de6787bd55769f091ec3089&sortBy=DaysOnMarket&order=desc').toPromise();
+    return this.httpClient.get<any>('https://api.bridgedataoutput.com/api/v2/fmls/listings?permissionGroupID=21e09d51-f3ac-4909-b6aa-6be71af3bda0&and[0][MlsStatus][ne]=Canceled&and[1][MlsStatus][ne]=Closed&and[2][MlsStatus][ne]=Expired&and[3][MlsStatus][ne]=Withdrawn&limit=' + limit2 + '&offset=' + offset2 + '&sortBy[0]=BridgeModificationTimestamp&access_token=af4a076f5f40a608cb449aa8603422cc&sortBy=DaysOnMarket&order=desc').toPromise();
   }
 }
