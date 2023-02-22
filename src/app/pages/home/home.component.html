@@ -1,9 +1,9 @@
 <app-header-image *ngIf="settings.header == 'image'" 
-                [backgroundImage]="'assets/images/others/homepage.jpg'"
+                [backgroundImage]="'assets/images/others/bgAH.png'"
                 [bgImageAnimate]="true"
                 [contentOffsetToTop]="true"
-                [title]="'Encuentra Tu Hogar no En Atlanta'"
-                [desc]="'Compañía Líder En Real no Estate'"
+                [title]="'HOME.H_TITLE' | translate"
+                [desc]="'HOME.H_DESC' | translate"
                 [isHomePage]="true"
                 [fullscreen]="false">
 </app-header-image> 
@@ -27,7 +27,7 @@
         [desc]="'HOME.H_DESC' | translate"
         [isHomePage]="true"
         [fullscreen]="true">
-    </app-header-video>
+</app-header-video>
             
 <app-videocontact></app-videocontact>
 
