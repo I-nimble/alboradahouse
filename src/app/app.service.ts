@@ -79,7 +79,7 @@ export class AppService {
     return this.http.get<Location[]>(this.url + 'locations.json');
   }
 
-  public getAddress(lat = 33.94644, lng = -84.22954){ 
+  public getAddress(lat = 34.1192869, lng = -84.033103){ 
     return this.http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&key='+this.apiKey);
     
   }
@@ -88,7 +88,7 @@ export class AppService {
     return this.http.get('https://maps.googleapis.com/maps/api/geocode/json?key='+this.apiKey+'&address='+address);
   }
 
-  public getFullAddress(lat = 33.94644, lng = -84.22954){ 
+  public getFullAddress(lat = 34.1192869, lng = -84.033103){ 
     return this.http.get('https://maps.googleapis.com/maps/api/geocode/json?latlng='+lat+','+lng+'&key='+this.apiKey).subscribe(data =>{ 
       return data['results'][0]['formatted_address'];
     });

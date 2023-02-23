@@ -745,7 +745,7 @@ button.swipe-arrow{
     // }
     &.agents{
         &:before{ 
-            background-image: url('~assets/images/props/office-2/4-big.jpg');
+            background-image: url('~assets/images/props/office-2/4-big.png');
         }
     }
     &.default{
@@ -997,31 +997,36 @@ button.swipe-arrow{
     }
     
     .container-agents-box {
-        width: 30%;
+        // width: 50%;
         display: flex;
         flex-direction: column;
+        width: 70%;
+        // display: flex;
+        justify-content: center;
     }
 
     .container-agents-box .mat-card{
         align-items: center;
-        width: 250px;
+        width: 282px;
         margin-top: 30px;
     }
 }
 
 .container-agents {
     display: flex;
-    justify-content: center;
-    margin-left: -200px;
+    margin-left: auto;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-agents-box {
-    width: 30%;
+    width: 70%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-agents-box .mat-card{
     margin-left: 30px; 
-    width: 250px;
+    width: 282px;
 }

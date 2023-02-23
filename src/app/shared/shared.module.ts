@@ -66,7 +66,7 @@ import { ClientsComponent } from './clients/clients.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { CommentsComponent } from './comments/comments.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component'; 
-// import { OurAgentsComponent } from './our-agents/our-agents.component';
+import { OurAgentsComponent } from './our-agents/our-agents.component';
 import { MissionComponent } from './mission/mission.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { LogoComponent } from './logo/logo.component';
@@ -191,7 +191,7 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
     GetInTouchComponent,
     CommentsComponent,
     TestimonialsComponent,   
-    // OurAgentsComponent, 
+    OurAgentsComponent, 
     MissionComponent, 
     OurServicesComponent,
     HeaderMapComponent,
@@ -219,7 +219,7 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
     GetInTouchComponent,
     CommentsComponent,
     TestimonialsComponent,   
-    // OurAgentsComponent, 
+    OurAgentsComponent, 
     MissionComponent, 
     OurServicesComponent, 
     HeaderMapComponent, 

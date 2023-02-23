@@ -9,8 +9,8 @@ import { emailValidator } from 'src/app/theme/utils/app-validators';
 })
 export class ContactComponent implements OnInit {
   public contactForm: FormGroup;
-  public lat: number = 33.987351;
-  public lng: number = -83.988675;
+  public lat: number = 34.1194736;
+  public lng: number = -84.0333184;
   public zoom: number = 12; 
   config: { observer: boolean; slidesPerView: number; spaceBetween: number; keyboard: boolean; navigation: boolean; pagination: boolean; grabCursor: boolean; loop: boolean; preloadImages: boolean; lazy: boolean; breakpoints: { 320: { slidesPerView: number; }; 600: { slidesPerView: number; }; 960: { slidesPerView: number; }; 1280: { slidesPerView: number; }; }; centerInsufficientSlides: boolean; };
   constructor(public formBuilder: FormBuilder) { }
