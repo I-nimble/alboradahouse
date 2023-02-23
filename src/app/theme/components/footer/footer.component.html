@@ -39,6 +39,10 @@
                             <mat-icon color="primary">schedule</mat-icon>
                             <span class="mx-2">{{ 'FOOT.SCHEDULE' | translate }} / 10:00AM - 6:00PM</span>
                         </p>
+                        <p fxLayout="row" fxLayoutAlign="start center" class="mt-1">
+                            <mat-icon color="primary">facebook</mat-icon>
+                            <span class="mx-2">{{'FOOT.FOLLOW' | translate}} <a href='https://www.facebook.com/profile.php?id=100086620599382' style='font-weight: bold;' class='secondary-color' target='_blank'>Facebook</a></span>
+                        </p>
                         <app-social-icons [iconSize]="'lg'" fxLayout="row" fxLayoutAlign="start center" class="desc"></app-social-icons>                    
                     </div>
 
@@ -71,20 +75,23 @@
                         <p fxLayout="row" fxLayoutAlign="start center" class="mt-1">
                             <span class="mx-2"><img src="assets/images/others/FMLS logo.png" width="25%" height="auto">Listings identified with the FMLS IDX logo come from FMLS and are held by brokerage firms other than the owner of this website. The listing brokerage is identified in any listing details. Information is deemed reliable but is not guaranteed. If you believe any FMLS listing contains material that infringes your copyrighted work please <a href="https://www.fmls.com/dmca.htm" style="color: white;" target="_blank">click here</a> to review our DMCA policy and learn how to submit a takedown request. © 2022 First Multiple Listing Service, Inc.</span>
                         </p>
-                        <p fxLayout="row" fxLayoutAlign="start center" class="mt-1">
+                        <!-- <p fxLayout="row" fxLayoutAlign="start center" class="mt-1">
                             <span class="mx-2">Powered by <a href="https://i-nimble.com/" style="font-weight: bold;" class="secondary-color" target="_blank">Inimble, LLC.</a> Please contact us at +1 (470) 868 1379 or info@i-nimble.com for any inquiries regarding this website.</span>
-                        </p>
+                        </p> -->
                     </div>
                 </div> 
-              
             </div>
             
             <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center" class="copyright">
                 <p ngClass.xs="mt-1">Copyright © 2023 All Rights Reserved</p>
+                
                 <p><a></a></p>
+                <p fxLayout="row" fxLayoutAlign="start center" class="mt-1">
+                    <!-- <span class="mx-2">Powered by <a href="https://i-nimble.com/" style="font-weight: bold;" class="secondary-color" target="_blank">Inimble, LLC.</a> Please contact us at +1 (470) 868 1379 or info@i-nimble.com for any inquiries regarding this website.</span> -->
+                    <span class="mx-2" [innerHTML]="'FOOT.I-NIMBLEBRAND' | translate"></span>
+                </p>
             </div>
 
         </div>
     </div>                  
-                
 </footer>
