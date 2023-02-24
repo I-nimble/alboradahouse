@@ -12,7 +12,8 @@
     "dev:ssr": "ng run housekey:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build --configuration production && ng run housekey:server:production",
-    "prerender": "ng run housekey:prerender"
+    "prerender": "ng run housekey:prerender",
+    "component": "ng g c shared/guides"
   },
   "private": true,
   "dependencies": {

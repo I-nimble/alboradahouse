@@ -9,7 +9,7 @@ export class AppInterceptor implements HttpInterceptor {
   
     intercept (req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-        // console.log(`Request for ${req.urlWithParams} started...`);
+        console.log(`Request for ${req.urlWithParams} started...`);
 
         return next.handle(req).pipe(map((event: HttpEvent<any>) => {
             if (event instanceof HttpResponse) {

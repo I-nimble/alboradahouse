@@ -98,7 +98,7 @@ export class HomeComponent implements OnInit {
   public async getProperties(sort, limit, offset){  
     if(sort = 'Ordenar por defecto' || 'Sort by default'){
       // if (this.fmls.offset == this.fmls.limit){
-        this.fmls.limit = this.fmls.limit + 12
+        this.fmls.limit = this.fmls.limit
       // }
       // this.fmls.offset = this.fmls.offset + 12
       let data = await this.fmls.getDataProperties(limit, offset)

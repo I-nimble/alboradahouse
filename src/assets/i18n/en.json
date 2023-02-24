@@ -27,7 +27,8 @@
     "MENU_ITEM": "Menu Item",
     "CONTACT": "Contact",
     "ABOUT_US": "About Us",
-    "ADMIN": "Admin"
+    "ADMIN": "Admin",
+    "HERO": "Search Properties"
   }, 
   "BTN": {
     "ADD": "Add",

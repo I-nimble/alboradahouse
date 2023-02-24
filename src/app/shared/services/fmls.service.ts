@@ -49,7 +49,7 @@ export class FmlsService {
       this.dataArray ['bedrooms'] = element['BedroomsTotal'];
       this.dataArray ['bathrooms'] = element['BathroomsTotalInteger'];
       this.dataArray ['garages'] = element['GarageSpaces'];
-      this.dataArray ['area'] = [element['LotSizeSquareFeet']];
+      this.dataArray ['area'] = [element['BuildingAreaTotal']];
       this.dataArray ['yearBuilt'] = element['YearBuilt'];
       this.dataArray ['addFeatures'] = [];
       if(element['ExteriorFeatures'].length != 0){
@@ -128,7 +128,7 @@ export class FmlsService {
     this.dataArray ['bedrooms'] = data['BedroomsTotal'];
     this.dataArray ['bathrooms'] = data['BathroomsTotalInteger'];
     this.dataArray ['garages'] = data['GarageSpaces'];
-    this.dataArray ['area'] = [data['LotSizeSquareFeet']];
+    this.dataArray ['area'] = [data['BuildingAreaTotal']];
     this.dataArray ['yearBuilt'] = data['YearBuilt'];
     this.dataArray ['addFeatures'] = [];
     if(data['ExteriorFeatures'].length != 0){

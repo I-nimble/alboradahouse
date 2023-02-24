@@ -82,6 +82,8 @@ import { ContactService } from './services/contact.service';
 // import { PopupComponent } from './popup/popup.component';
 import { VideocontactComponent } from './videocontact/videocontact.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { GuidesComponent } from './guides/guides.component';
+
 
 @NgModule({
   imports: [
@@ -200,6 +202,7 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
     AlertDialogComponent,
     DialogHeaderControlsComponent,
     // ChatComponent,
+    GuidesComponent,
     ContactFormComponent,
     VideocontactComponent  
   ],
@@ -230,6 +233,7 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
     // ChatComponent,
     ContactFormComponent,
     VideocontactComponent,
+    GuidesComponent,
     // PopupComponent
   ], 
   providers:[

@@ -1,0 +1,24 @@
+<div class="container">
+
+    <form [formGroup]="contactForm"  class="" id="contact">
+        <h2 class="">Want to receive useful information like below?</h2>
+        <h4>Leave us your information so we can help you getting useful tips</h4>
+        <div class="form-group">
+            <div class="">
+                <!-- <label for="name" class="">Name</label> -->
+                <input matInput #name formControlName="name" type="name" id="name" name="name" class="" placeholder="Your name" required/>
+            </div>
+            <div class="">
+                <!-- <label for="email" class="">Email</label> -->
+                <input matInput #email formControlName="email" type="email" id="email" name="email" class="" placeholder="Your Email Address" required/>
+            </div>
+            <div class="">
+                <!-- <label for="email" class="">Email</label> -->
+                <input matInput #tel formControlName="tel" type="tel" id="tel" name="tel" class="" placeholder="Your Phone Number" required/>
+            </div>
+            <div>
+                <button mat-raised-button type="submit" class="" (click)="sendEmail()">Send</button>
+            </div>
+        </div>
+    </form>
+</div>

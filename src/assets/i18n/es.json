@@ -27,7 +27,8 @@
       "MENU_ITEM": "Objeto Menu",
       "CONTACT": "Contacto",
       "ABOUT_US": "Nosotros",
-      "ADMIN": "Admin"
+      "ADMIN": "Admin",
+      "HERO": "Buscar Casas"
     }, 
     "BTN": {
       "ADD": "Agregar",
