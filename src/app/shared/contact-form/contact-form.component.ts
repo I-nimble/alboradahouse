@@ -19,7 +19,6 @@ export class ContactFormComponent implements OnInit {
       name:[null, [Validators.required]],
       email:[null, [Validators.required]],
       tel:[null, [Validators.required]],
-      message:[null, [Validators.required]]
     });
   }
   
@@ -27,17 +26,15 @@ export class ContactFormComponent implements OnInit {
     let name = this.contactForm.value.name;
     let email = this.contactForm.value.email;
     let tel = this.contactForm.value.tel;
-    let message = this.contactForm.value.message;
     let req = {
       name:name,
       email:email,
       tel:tel,
-      message:message
     }
-    console.log(name, this.contactForm.value.message);
+    // console.log(name, this.contactForm.value.message);
     this.emailService.sendMessage(req).subscribe(data => {
       
-      console.log(data);
+      // console.log(data);
     })
   }
 
