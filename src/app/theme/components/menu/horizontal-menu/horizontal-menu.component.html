@@ -17,6 +17,7 @@
   <a *ngIf="menuItem.hasSubMenu && menuItem.parentId != 0" mat-menu-item [matMenuTriggerFor]="menu"> 
     <span>{{ menuItem.title | translate }}</span> 
   </a> 
+  
 
   <mat-menu #menu="matMenu" class="horizontal-sub-menu">
       <app-horizontal-menu [menuParentId]="menuItem.id"></app-horizontal-menu>
