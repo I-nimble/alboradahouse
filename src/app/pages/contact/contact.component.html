@@ -11,13 +11,13 @@
         <mat-card class="main-content-header mb-5">
             
             <div fxLayout="row wrap" fxLayoutAlign="space-around">
-                <div fxFlex="100" fxFlex.gt-xs="33.3">
+                <!-- <div fxFlex="100" fxFlex.gt-xs="33.3">
                     <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
                         <mat-icon color="primary" class="mat-icon-lg">home</mat-icon>
                         <h3 class="primary-color py-1">{{ 'CONTACTO.ADDRESS' | translate}}</h3>
                         <span><a href="https://goo.gl/maps/MGeMDVoRyYeAS8Mu5" target="_blank" style="color: black;">4942 bramblewood Circle  Sugar Hill Ga 30518</a></span>
                     </div>
-                </div>
+                </div> -->
                 <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                     <div fxLayout="column" fxLayoutAlign="center center">
                         <mat-icon color="primary" class="mat-icon-lg">call</mat-icon>
@@ -78,11 +78,11 @@
 
             <app-contact-form></app-contact-form>
             
-            <div class="mt-5 contact-map">
+            <!-- <div class="mt-5 contact-map">
                 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeControl]="true" [fullscreenControl]="true">
                     <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="false" ></agm-marker>
                 </agm-map>
-            </div>
+            </div> -->
 
         </mat-card>  
     </div>

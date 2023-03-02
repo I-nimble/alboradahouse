@@ -20,13 +20,13 @@ export class HomeComponent implements OnInit {
 
   public slides = [];
   public properties: Property[];
-  public viewType: string = 'list';
-  public viewCol: number = 25;
+  public viewType: string = 'grid';
+  public viewCol: number = 50;
   public count: number = 10;
   public sort: string;
   public searchFields: any;
   public removedSearchField: string;
-  public pagination:Pagination = new Pagination(1, 12, null, 2, 0, 0); 
+  public pagination:Pagination = new Pagination(1, 6, null, 2, 0, 0); 
   public message:string;
   public featuredProperties: Property[];
   public locations: Location[]; 
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
         this.viewCol = 33.3;
       }
       else{
-        this.viewCol = 25;
+        this.viewCol = 33.3;
       }
     });
 
@@ -62,6 +62,7 @@ export class HomeComponent implements OnInit {
     this.getLocations();
     this.getProperties(this.sort, this.fmls.limit, this.fmls.offset);  
     // this.getFeaturedProperties();
+    console.log(this.viewCol)
 
     const tag = document.createElement('script');
 
@@ -219,6 +220,7 @@ export class HomeComponent implements OnInit {
     this.getProperties(sort, this.fmls.limit, this.fmls.offset)
   }
   public changeViewType(obj){ 
+    console.log(obj)
     this.viewType = obj.viewType;
     this.viewCol = obj.viewCol; 
   }

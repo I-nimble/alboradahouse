@@ -13,6 +13,7 @@ export const horizontalMenuItems = [
     // new Menu (48, 'Landing', '/landing', null, null, false, 40),  
     // new Menu (50, '404 Page', '/404', null, null, false, 40),  
     new Menu (60, 'NAV.CONTACT', '/contact', null, null, false, 0),  
+    new Menu (61, 'NAV.BLOG', '/blog', null, null, false, 0),
     // new Menu (70, 'NAV.ABOUT_US', '/about', null, null, false, 0),   
     // new Menu (80, 'FAQs', '/faq', null, null, false, 0),
     // new Menu (140, 'Others', null, null, null, true, 40),
@@ -24,7 +25,7 @@ export const horizontalMenuItems = [
 
 export const verticalMenuItems = [ 
     new Menu (1, 'NAV.HOME', '/', null, null, false, 0), 
-    new Menu (2, 'NAV.PROPERTIES', '/properties', null, null, false, 0), 
+    new Menu (2, 'NAV.PROPERTIES', '/properties', null, null, false, 0),
     // new Menu (40, 'NAV.PAGES', null, null, null, true, 0),
     // new Menu (41, 'NAV.AGENTS', '/agents', null, null, false, 40), 
     // new Menu (42, 'NAV.AGENT', '/agents/1', null, null, false, 40),
@@ -35,6 +36,7 @@ export const verticalMenuItems = [
     // new Menu (48, 'Landing', '/landing', null, null, false, 40), 
     // new Menu (50, '404 Page', '/404', null, null, false, 40),
     new Menu (60, 'NAV.CONTACT', '/contact', null, null, false, 0),  
+    new Menu (61, 'NAV.BLOG', '/blog', null, null, false, 0),
     // new Menu (70, 'NAV.ABOUT_US', '/about', null, null, false, 0),    
     // new Menu (80, 'NAV.FAQs', '/faq', null, null, false, 0),
     // new Menu (140, 'Level 1', null, null, null, true, 0),
