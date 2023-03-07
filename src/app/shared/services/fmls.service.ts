@@ -36,6 +36,7 @@ export class FmlsService {
       this.dataArray ['title'] = element['BuildingName'];
       this.dataArray ['PropertyType'] = element['PropertyType'];
       this.dataArray ['PropertyStatus'] = element['MlsStatus'];
+      // this.dataArray ['status'] = element['standard']
       this.dataArray ['city'] = element['City'];
       this.dataArray ['Zipcode'] = element['PostalCode'];
       this.dataArray ['Neighborhood'] = element['CountyOrParish'];

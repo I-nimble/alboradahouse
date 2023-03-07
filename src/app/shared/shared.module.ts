@@ -83,6 +83,7 @@ import { ContactService } from './services/contact.service';
 import { VideocontactComponent } from './videocontact/videocontact.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { GuidesComponent } from './guides/guides.component';
+import { SellerComponent } from './seller/seller.component';
 
 
 @NgModule({
@@ -201,6 +202,7 @@ import { GuidesComponent } from './guides/guides.component';
     ConfirmDialogComponent,
     AlertDialogComponent,
     DialogHeaderControlsComponent,
+    SellerComponent,
     // ChatComponent,
     GuidesComponent,
     ContactFormComponent,
@@ -234,6 +236,7 @@ import { GuidesComponent } from './guides/guides.component';
     ContactFormComponent,
     VideocontactComponent,
     GuidesComponent,
+    SellerComponent,
     // PopupComponent
   ], 
   providers:[

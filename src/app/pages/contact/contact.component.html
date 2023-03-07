@@ -6,10 +6,15 @@
 </app-header-image>
 
 <div class="px-3">
-
     <div class="theme-container">
+        <mat-card class="mb-5 row">
+            <div class="container">
+                <img class="card-img" src="../../../assets/images/others/IMG_0745.jpg" alt="" width="300">
+            </div>
+            <app-contact-form></app-contact-form>
+        </mat-card>
         <mat-card class="main-content-header mb-5">
-            
+            <h1 class="text-center">{{'CONTACTO.AGENT' | translate}}</h1>
             <div fxLayout="row wrap" fxLayoutAlign="space-around">
                 <!-- <div fxFlex="100" fxFlex.gt-xs="33.3">
                     <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
@@ -76,7 +81,6 @@
                 <img *ngFor="let src of images" src='src\assets\images\fotosContact'>
               </div> -->
 
-            <app-contact-form></app-contact-form>
             
             <!-- <div class="mt-5 contact-map">
                 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeControl]="true" [fullscreenControl]="true">

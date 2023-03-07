@@ -85,7 +85,8 @@
     "CONTACTO_DESC": "Questions? We'll anwser them",
     "ADDRESS": "ADDRESS",
     "PHONE_NUMBERS": "PHONE NUMBERS",
-    "EMAIL": "EMAIL"
+    "EMAIL": "EMAIL",
+    "AGENT": "Our agents are standing by and ready to assist you"
   },
   "PROPERTY": {
     "CALCULATOR": "MORTGAGE CALCULATOR:",
@@ -143,7 +144,7 @@
     "P_DESC": "Home is where we start... - T.S. Eliot"
   },
   "AGENTS": {
-    "A_TITLE": "Meet our agents"
+    "A_TITLE": "We are Alborada House"
   },
   "FOOT": {
     "SCHEDULE": "Mon - Fri",
@@ -158,6 +159,18 @@
     "POPULAR": "Popular",
     "PRICE<": "Price (Low to High)",
     "PRICE>": "Price (High to Low)"
+  },
+  "GUIDES":{
+    "TITLE": "DON'T KNOW WHERE TO START?",
+    "SUB": "DOWNLOAD THE BUYER'S GUIDE",
+    "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",
+    "BTN": "Send"
+  },
+  "SELLER":{
+    "TITLE": "WANT TO SELL YOUR HOUSE?",
+    "SUB": "DOWNLOAD THE SELLER'S GUIDE",
+    "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",
+    "BTN": "Send"
   },
   "Ordenar por defecto": "Sort by default",
   "ChatHeader": "Say \"Hi\" to our ChatBot",

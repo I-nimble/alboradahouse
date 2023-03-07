@@ -441,6 +441,7 @@ main.content-offset-to-top{
                     margin-right: 8px;
                     font-weight: 500;
                     min-width: 114px;
+                    width: 50%;
                     display: inline-block;
                 }
                 .list{
@@ -979,6 +980,28 @@ button.swipe-arrow{
     }
 }
 
+.container-agents {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    // flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-agents-box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container-agents-box .mat-card{
+    margin-left: 15px; 
+    margin-right: 15px;
+    width: 500px;
+}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .ps {
         overflow: auto !important;
@@ -987,13 +1010,13 @@ button.swipe-arrow{
 
 // Estilos nuestros agentes (home)
 
-@media screen and (min-width: 400px) and (max-width: 959px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
     .container-agents {
         display: flex;
         justify-content: center;
-        margin-left: -170px;
+        // margin-left: -170px;
+        flex-direction: column-reverse;
         flex-wrap: wrap;
-
     }
     
     .container-agents-box {
@@ -1006,27 +1029,30 @@ button.swipe-arrow{
     }
 
     .container-agents-box .mat-card{
-        align-items: center;
-        width: 282px;
+        // align-items: center;
+        // width: 250px;
         margin-top: 30px;
     }
 }
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .container-agents {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .container-agents-box {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        // display: flex;
+        justify-content: center;
+    }
 
-.container-agents {
-    display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.container-agents-box {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-agents-box .mat-card{
-    margin-left: 30px; 
-    width: 282px;
+    .container-agents-box .mat-card{
+        // align-items: center;
+        width: 300px;
+        margin-top: 30px;
+    }
 }

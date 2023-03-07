@@ -1,3 +1,25 @@
 .contact-map .sebm-google-map-container {
     height: 400px;
 }
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img{
+    border-radius: 12px;
+    padding: 8px;
+}
+.main-content-header {
+    margin-top: 12px !important;
+    width: 65%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+app-contact-form{
+    margin-left: 5%;
+}
+.text-center{
+    text-align: center;
+    font-weight: 300;
+}

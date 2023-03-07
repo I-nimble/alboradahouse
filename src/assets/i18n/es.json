@@ -85,7 +85,8 @@
       "CONTACTO_DESC": "¿Tienes preguntas? ¡Las responderemos!",
       "ADDRESS": "DIRECCION",
       "PHONE_NUMBERS": "TELEFONOS",
-      "EMAIL": "CORREOS"
+      "EMAIL": "CORREOS",
+      "AGENT": "¿Necesitas hablar con un agente?"
     },
     "PROPERTY": {
       "CALCULATOR": "CALCULADORA DE HIPOTECA:",
@@ -143,7 +144,7 @@
       "P_DESC": "Hogar es donde uno empieza... - T.S. Eliot"
     },
     "AGENTS": {
-      "A_TITLE": "Conoce a nuestros agentes"
+      "A_TITLE": "Somos Alborada House"
     },
     "FOOT": {
       "SCHEDULE": "Lun - Vier",
@@ -151,6 +152,18 @@
       "FOLLOW": "Para mas informacion sigue nuestra pagina de ",
       "I-NIMBLEBRAND": "Desarrollado por <a href=\"https://i-nimble.com/\" style=\"font-weight: bold;\" class=\"secondary-color\" target=\"_blank\">Inimble, LLC.</a> Para mas informacion contactanos por +1 (470) 868 1379 ó info@i-nimble.com para cualquier consulta relacionada con este sitio web."
 
+    },
+    "GUIDES":{
+      "TITLE": "¿NO SABES POR DONDE COMENZAR?",
+      "SUB": "DESCARGA LA GUIA DEL COMPRADOR",
+      "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",
+      "BTN": "Enviar"
+    },
+    "SELLER":{
+      "TITLE": "¿QUIERES VENDER TU CASA?",
+      "SUB": "DESCARGA LA GUIA DEL VENDEDOR",
+      "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",
+      "BTN": "Enviar"
     },
     "SORT": {
       "DEFAULT": "Ordenar por defecto",

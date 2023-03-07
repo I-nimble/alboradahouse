@@ -1,9 +1,9 @@
 <div class="container">
 
     <form [formGroup]="contactForm"  class="" id="contact">
-        <h2 class="">{{'GUIDES.TITLE' | translate}}</h2>
-        <h4>{{'GUIDES.SUB' | translate}}</h4>
-        <!-- <p>{{'GUIDES.DESCR' | translate}}</p> -->
+        <h2 class="">{{'SELLER.TITLE' | translate}}</h2>
+        <h4>{{'SELLER.SUB' | translate}}</h4>
+        <!-- <p>{{'SELLER.DESCR' | translate}}</p> -->
         <div class="form-group">
             <div class="">
                 <!-- <label for="name" class="">Name</label> -->
@@ -14,7 +14,7 @@
                 <input matInput #email formControlName="email" type="email" id="email" name="email" class="" placeholder="Email Address" required/>
             </div>
             <div>
-                <button mat-raised-button type="submit" class="" (click)="sendEmail()">{{'GUIDES.BTN' | translate}}</button>
+                <button mat-raised-button type="submit" class="" (click)="sendEmail()">{{'SELLER.BTN' | translate}}</button>
             </div>
         </div>
     </form>

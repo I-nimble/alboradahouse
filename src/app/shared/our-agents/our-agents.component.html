@@ -4,19 +4,28 @@
             <h1 class="section-title">{{ 'AGENTS.A_TITLE' | translate }}</h1>
 
             <div class="container-agents"> 
+              <div class="contact-us">
+                <div class="text-container">
+                  <p>Let our experienced team help you buy or sell your dream home</p>
+                  <a mat-raised-button color="primary" routerLink="/contact">{{ 'NAV.CONTACT' | translate }}</a>  
+                </div>
+              </div>
                 <div class="container-agents-box"> 
                             <mat-card>
-                              <div>
-                                <img mat-card-image src="\assets\images\agents\hector.jpg" height="auto" max-width="300" alt="" class="">
+                              <div class="relative">
+                                <img mat-card-image src="\assets\images\agents\hector.jpg" height="auto" max-width="250" alt="" class="">
                               </div>
+                              <div class="card-body">
                                 <mat-card-content>
                                     <h2 class="fw-600">Hector Rodriguez</h2>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary" matTooltip="Organization" matTooltipPosition="above">business</mat-icon><span class="mx-2">Alborada House</span></p>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary">email</mat-icon><span class="mx-2">hectorarodriguezrealtor@gmail.com</span></p>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary">call</mat-icon><span class="mx-2">+1 (678) 541-4793</span></p>
                                 </mat-card-content>
+                                <div class="card-social">
+                                  <div class="absolute">
                                 <mat-divider></mat-divider>
-                                <mat-card-actions fxLayoutAlign="space-between center">
+                                <mat-card-actions fxLayoutAlign="space-between center" class="flex-end">
                                     <div fxLayout="row" fxLayoutAlign="start center" class="text-muted">
                                         <a [href]="'https://www.facebook.com/hectora.rodriguez.5454/'" target="blank" class="social-icon">
                                           <svg class="mat-icon" viewBox="0 0 24 24">
@@ -46,19 +55,27 @@
                                     </div>
                                     <div>
                                     </div> 
-                                </mat-card-actions>                              
+                                </mat-card-actions> 
+                              </div>
+                              </div>
+                              </div>                             
                             </mat-card>
                             
                             <mat-card>
-                                <img mat-card-image src="\assets\images\agents\irma.jpg" height="auto" max-width="300" alt="" class="">
+                              <div class="relative">
+                                <img mat-card-image src="\assets\images\agents\irma.jpg" height="auto" max-width="250" alt="" class="">
+                              </div>
+                              <div class="card-body">
                                 <mat-card-content>
                                     <h2 class="fw-600">Irma Bastidas</h2>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary" matTooltip="Organization" matTooltipPosition="above">business</mat-icon><span class="mx-2">Alborada House</span></p>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary">email</mat-icon><span class="mx-2">Irmabastidasrealtor@gmail.com</span></p>
                                     <p fxLayoutAlign="start center"><mat-icon color="primary">call</mat-icon><span class="mx-2">+1 (678) 541-3829 </span></p>
                                 </mat-card-content>
+                                <div class="card-social">
+                                  <div class="absolute">
                                 <mat-divider></mat-divider>
-                                <mat-card-actions fxLayoutAlign="space-between center">
+                                <mat-card-actions fxLayoutAlign="space-between center" class="flex-end">
                                     <div fxLayout="row" fxLayoutAlign="start center" class="text-muted">
                                         <a [href]="'https://www.facebook.com/irmaisabel.bastidasferrer/'" target="blank" class="social-icon">
                                           <svg class="mat-icon" viewBox="0 0 24 24">
@@ -88,7 +105,9 @@
                                     </div>
                                     <div>
                                     </div> 
-                                </mat-card-actions>                              
+                                </mat-card-actions>
+                              </div>  </div>  
+                              </div>                          
                             </mat-card>
                     </div>
             </div>

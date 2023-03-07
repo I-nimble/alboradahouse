@@ -13,7 +13,7 @@
     "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build --configuration production && ng run housekey:server:production",
     "prerender": "ng run housekey:prerender",
-    "component": "ng g c shared/guides"
+    "component": "ng g c shared/seller"
   },
   "private": true,
   "dependencies": {

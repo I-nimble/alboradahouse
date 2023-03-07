@@ -14,16 +14,17 @@
   .container {
     // max-width: 400px;
     width: 100%;
+    margin-top: 50px !important;
     margin: 0 auto;
     text-align: center;
     // position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   
   #contact {
     background: #0a79b0;
     color: #ffffff;
-    padding: 15px;
+    padding: 30px;
     // margin: 50px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }

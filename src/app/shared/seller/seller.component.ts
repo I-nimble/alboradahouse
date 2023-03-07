@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { EmailService } from '../services/email.service';
-import { Settings, AppSettings } from '../../app.settings';
-
 
 @Component({
-  selector: 'app-guides',
-  templateUrl: './guides.component.html',
-  styleUrls: ['./guides.component.scss']
+  selector: 'app-seller',
+  templateUrl: './seller.component.html',
+  styleUrls: ['./seller.component.scss']
 })
-export class GuidesComponent implements OnInit {
+export class SellerComponent implements OnInit {
+
   contactForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private emailService: EmailService) { }

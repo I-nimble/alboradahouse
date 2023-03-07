@@ -56,6 +56,22 @@
                     </mat-select> 
                 </mat-form-field>
             </div>
+            <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
+                <button mat-raised-button color="warn" class="uppercase mx-1" (click)="reset()">{{ 'BTN.CLEAR' | translate }}</button>
+                <!-- <button *ngIf="!vertical" mat-raised-button color="primary" class="uppercase mx-1" (click)="showMore = !showMore">
+                    {{( showMore ? 'BTN.HIDE' : 'BTN.ADVANCED' )| translate}}
+                  </button>       -->
+                <button *ngIf="searchOnBtnClick" mat-raised-button color="primary" class="search-btn mx-1" (click)="search()"><mat-icon>search</mat-icon> Buscar</button>
+              </div>
+            
+            <!-- <div fxFlex="100" class="mb-2"> 
+                <p class="uppercase m-2 fw-500">Features</p> 
+                <div formArrayName="features" [fxLayout]="(vertical) ? 'column' : 'row wrap'">
+                    <div [formGroupName]="i" *ngFor="let control of form['controls'].features['controls']; index as i" class="p-2">
+                        <mat-checkbox formControlName="selected">{{features[i].name}}</mat-checkbox>                         
+                    </div>
+                </div>
+            </div> -->
         
         <div *ngIf="showMore" [fxLayout]="(vertical) ? 'column' : 'row wrap'" class="w-100">
 
@@ -239,13 +255,13 @@
     </div>
   
 
-    <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
+    <!-- <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
       <button mat-raised-button color="warn" class="uppercase mx-1" (click)="reset()">{{ 'BTN.CLEAR' | translate }}</button>
-      <!-- <button *ngIf="!vertical" mat-raised-button color="primary" class="uppercase mx-1" (click)="showMore = !showMore">
+      <button *ngIf="!vertical" mat-raised-button color="primary" class="uppercase mx-1" (click)="showMore = !showMore">
           {{( showMore ? 'BTN.HIDE' : 'BTN.ADVANCED' )| translate}}
-        </button>       -->
+        </button>      
       <button *ngIf="searchOnBtnClick" mat-raised-button color="primary" class="search-btn mx-1" (click)="search()"><mat-icon>search</mat-icon> Buscar</button>
-    </div>
+    </div> -->
     
 
 </form>
