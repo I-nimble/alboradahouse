@@ -129,7 +129,8 @@ export class HomeComponent implements OnInit {
       //   this.pagination.page = this.settings.loadMore.page; 
       // }
       let result = this.filterData(this.fmls.uniqueData); 
-      // console.log('result.data:', result.data)
+
+      console.log('result.data:', result.data)
       if(result.data.length == 0){
         this.properties.length = 0;
         this.pagination = new Pagination(1, this.count, null, 2, 0, 0);  
@@ -173,6 +174,8 @@ export class HomeComponent implements OnInit {
   }
 
   public filterData(data){
+    console.log(this.searchFields)
+    // console.log(data)
     return this.appService.filterData(data, this.searchFields, this.sort, this.pagination.page, this.pagination.perPage);
   }
 

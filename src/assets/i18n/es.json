@@ -85,8 +85,15 @@
       "CONTACTO_DESC": "¿Tienes preguntas? ¡Las responderemos!",
       "ADDRESS": "DIRECCION",
       "PHONE_NUMBERS": "TELEFONOS",
-      "EMAIL": "CORREOS",
-      "AGENT": "¿Necesitas hablar con un agente?"
+      "ASESORIAS":{
+        "TITLE": "Asesorías",
+        "SUB_TITLE": "Contacto directo Whatsapp"
+      },
+      "EMAIL": {
+        "TITLE": "Información",
+        "SUB_TITLE": "Atención por correo electronico"
+      },
+      "AGENT": "Nuestros agentes estan para servirte"
     },
     "PROPERTY": {
       "CALCULATOR": "CALCULADORA DE HIPOTECA:",
@@ -137,7 +144,7 @@
     },
     "SHOW": "MOSTRAR",
     "HOME": {
-      "H_TITLE": "Encuentra Tu Hogar En Atlanta",
+      "H_TITLE": "Encuentra tu casa ideal en Atlanta",
       "H_DESC": "Compañía Líder En Real Estate"
     },
     "PROPERTIES": {

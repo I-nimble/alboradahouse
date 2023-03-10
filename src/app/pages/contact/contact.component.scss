@@ -23,3 +23,12 @@ app-contact-form{
     text-align: center;
     font-weight: 300;
 }
+span .primary-color{
+    font-weight: 900;
+    text-decoration: none;
+}
+@media screen and (max-width: 672px) {
+    .card-img{
+        display: none;
+    }
+}

@@ -1061,7 +1061,7 @@ export class AppService {
       
     }
 
-    console.log(data)
+    // console.log(data)
     
     // if (data.length >= 20){
       // for(let i = 0; i < data.length; i = i + perPage){

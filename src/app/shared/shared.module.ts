@@ -84,6 +84,7 @@ import { VideocontactComponent } from './videocontact/videocontact.component';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 import { GuidesComponent } from './guides/guides.component';
 import { SellerComponent } from './seller/seller.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 
 @NgModule({
@@ -206,7 +207,8 @@ import { SellerComponent } from './seller/seller.component';
     // ChatComponent,
     GuidesComponent,
     ContactFormComponent,
-    VideocontactComponent  
+    VideocontactComponent,
+    SearchBarComponent
   ],
   declarations: [ 
     LogoComponent,
@@ -237,6 +239,7 @@ import { SellerComponent } from './seller/seller.component';
     VideocontactComponent,
     GuidesComponent,
     SellerComponent,
+    SearchBarComponent,
     // PopupComponent
   ], 
   providers:[

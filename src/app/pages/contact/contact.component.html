@@ -14,7 +14,7 @@
             <app-contact-form></app-contact-form>
         </mat-card>
         <mat-card class="main-content-header mb-5">
-            <h1 class="text-center">{{'CONTACTO.AGENT' | translate}}</h1>
+            <h1 class="text-center mb-3">{{'CONTACTO.AGENT' | translate}}</h1>
             <div fxLayout="row wrap" fxLayoutAlign="space-around">
                 <!-- <div fxFlex="100" fxFlex.gt-xs="33.3">
                     <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
@@ -25,16 +25,18 @@
                 </div> -->
                 <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                     <div fxLayout="column" fxLayoutAlign="center center">
-                        <mat-icon color="primary" class="mat-icon-lg">call</mat-icon>
-                        <h3 class="primary-color py-1">{{ 'CONTACTO.PHONE_NUMBERS' | translate}}</h3>
-                        <span><a href="tel:+1 (678) 541-4793" style="color: black;">+1 (678) 541-4793</a></span>
+                        <!-- <mat-icon color="primary" class="mat-icon-lg">call</mat-icon> -->
+                        <h2 class="py-1">{{ 'CONTACTO.ASESORIAS.TITLE' | translate}}</h2>
+                        <p>{{'CONTACTO.ASESORIAS.SUB_TITLE' | translate}}</p>
+                        <span><a href="tel:+1 (678) 541-4793" class="primary-color">+1 (678) 541-4793</a></span>
                     </div>
                 </div>
                 <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                     <div fxLayout="column" fxLayoutAlign="center center">
-                        <mat-icon color="primary" class="mat-icon-lg">mail_outline</mat-icon>
-                        <h3 class="primary-color py-1">{{ 'CONTACTO.EMAIL' | translate}}</h3>
-                        <span><a href="mailto:alboradahouserb@gmail.com" style="color: black;">alboradahouserb@gmail.com</a></span>
+                        <!-- <mat-icon color="primary" class="mat-icon-lg">mail_outline</mat-icon> -->
+                        <h2 class="py-1">{{ 'CONTACTO.EMAIL.TITLE' | translate}}</h2>
+                        <p>{{'CONTACTO.EMAIL.SUB_TITLE' | translate}}</p>
+                        <span><a href="mailto:alboradahouserb@gmail.com" class="primary-color">alboradahouserb@gmail.com</a></span>
                     </div>
                 </div>
                 <!-- <div class="divider w-100 mt-3"></div>

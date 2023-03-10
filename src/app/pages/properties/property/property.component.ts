@@ -45,6 +45,7 @@ export class PropertyComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.property?.features)
     this.sub = this.activatedRoute.params.subscribe(params => {   
       this.getPropertyById(params['id']); 
     });

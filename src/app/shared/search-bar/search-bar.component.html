@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="content" id="content">
+            <input type="text" class="mat-input-element form-control" (keydown.enter)="searcher()" [(ngModel)]="searchBar" placeholder="City">
+            <!-- <input type="text" class="mat-input-element form-control" [(ngModel)]="searchBar"  placeholder="Code, City, zipCode"> -->
+            <div class="results" [ngClass]="{'visible': resultsVisible}">
+                <div class="card-header" *ngIf="properties !== undefined">
+                    <h4>City, zipCode</h4>
+                    <p>address</p>
+                </div>
+                <div class="result-box" *ngFor="let property of properties">
+                    <a [routerLink]="['/properties', property.id]" class="result-item" *ngIf="property.length !== 0">
+                        <span> {{property.city}}, {{property.zipCode}}</span>
+                        <p>{{property.formattedAddress}}</p>
+                    </a>
+                </div>
+                <!-- <div class="card-header" *ngIf="properties !== undefined">
+                    <h4>zipCode</h4>
+                </div>
+                <div class="result-box" *ngFor="let property of byzip">
+                    <a [routerLink]="['/properties', property.id]" class="result-item" *ngIf="property.length !== 0">
+                        <span> {{property.city}}, {{property.zipCode}}</span>
+                        <p>{{property.formattedAddress}}</p>
+                    </a>
+                </div> -->
+                <div class="result-box">
+                    <div class="result-danger" *ngIf="message">
+                        <span>no results</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="mat-raised-button mat-primary" (click)="searcher()">Buscar casas</a>
+        </div>
+        <a class="link-item" href="/"><span>Busco vender</span></a>
+    </div>
+</div>

@@ -7,8 +7,8 @@
         <p *ngIf="desc" class="desc">{{desc}}</p>
         <div *ngIf="isHomePage" ngClass.gt-xs="mt-4" ngClass.xs="mt-3">
           <!-- <a mat-raised-button routerLink="/about">{{ 'NAV.ABOUT_US' | translate}}</a> -->
-          <a mat-raised-button routerLink="/properties">{{ 'NAV.HERO' | translate }}</a>  
-            
+          <!-- <a mat-raised-button routerLink="/properties">{{ 'NAV.HERO' | translate }}</a>   -->
+          <app-search-bar></app-search-bar>
         </div>
         
     </div>

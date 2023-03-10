@@ -2,9 +2,9 @@
 
 .header-image-wrapper{
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     margin-top: -$main-toolbar-height;
-    padding-top: $main-toolbar-height/2;
+    padding-top: 20px + $main-toolbar-height/2;
     .header-image-content{
         position: relative;
         min-height: $header-image-min-height;

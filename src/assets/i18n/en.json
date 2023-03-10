@@ -85,7 +85,14 @@
     "CONTACTO_DESC": "Questions? We'll anwser them",
     "ADDRESS": "ADDRESS",
     "PHONE_NUMBERS": "PHONE NUMBERS",
-    "EMAIL": "EMAIL",
+    "ASESORIAS":{
+      "TITLE": "Consultations",
+      "SUB_TITLE": "Direct WhatsApp Contact"
+    },
+    "EMAIL": {
+      "TITLE": "Information",
+      "SUB_TITLE": "Email Support"
+    },
     "AGENT": "Our agents are standing by and ready to assist you"
   },
   "PROPERTY": {
@@ -137,7 +144,7 @@
   },
   "SHOW": "SHOW",
   "HOME": {
-    "H_TITLE": "Find Your Home In Atlanta",
+    "H_TITLE": "Discover Your Dream Home in Atlanta with Us",
     "H_DESC": "Leader Real State Company"
   },
   "PROPERTIES": {
