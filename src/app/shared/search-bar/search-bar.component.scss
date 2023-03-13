@@ -1,5 +1,9 @@
 .container{
     padding: 18px;
+    max-width: 550px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .card{
     border-radius: 8px;
@@ -10,7 +14,7 @@
     padding: 4px;
     border-radius: 8px;
     background-color: #ffffff;
-    width: 52% !important;
+    width: calc(100% - 150px);
     border: 2px solid #aaa;
     color: #000000 !important;
     font-weight: 600;
@@ -31,9 +35,9 @@
 }
 .results{
     position: absolute;
-    width: 58%;
+    width: calc(100% - 145px);
     left: 0;
-    max-height: 180px;
+    max-height: 220px;
     display: flex;
     flex-direction: column;
     overflow: hidden auto;

@@ -1,5 +1,16 @@
 @import "../../theme/styles/variables";
-
+.bg-container{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    /* width: 100%; */
+    overflow: hidden;
+    left: 0;
+    right: 0;
+}
+.search-container{
+    width: 100%;
+}
 .header-image-wrapper{
     position: relative;
     // overflow: hidden;

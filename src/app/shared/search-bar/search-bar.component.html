@@ -1,7 +1,7 @@
 <div class="container">
     <div class="card">
         <div class="content" id="content">
-            <input type="text" class="mat-input-element form-control" (keydown.enter)="searcher()" [(ngModel)]="searchBar" placeholder="City">
+            <input type="text" class="mat-input-element form-control" (keydown.enter)="searcher()" [(ngModel)]="searchBar" placeholder="Enter the City or Zipcode">
             <!-- <input type="text" class="mat-input-element form-control" [(ngModel)]="searchBar"  placeholder="Code, City, zipCode"> -->
             <div class="results" [ngClass]="{'visible': resultsVisible}">
                 <div class="card-header" *ngIf="properties !== undefined">

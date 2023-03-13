@@ -1224,39 +1224,39 @@ export class AppService {
     return [        
         { 
             id: 1,
-            fullName: 'Carmela Moreno',
+            fullName: 'Irma Bastidas',
             // desc: 'Phasellus sed metus leo. Donec laoreet, lacus ut suscipit convallis, erat enim eleifend nulla, at sagittis enim urna et lacus.',            
-            organization: 'Mi Hogar En Atlanta',
-            email: 'mihogarenatlanta@gmail.com ',
-            phone: '+1 (678) 744-8007',
+            organization: 'Alborada House',
+            email: 'alboradahouserb@gmail.com',
+            phone: '+1 (678) 541-4793',
             social: {
-              facebook: 'https://www.facebook.com/mihogarenatlanta/',
-              twitter: 'lusia',
-              linkedin: 'https://www.linkedin.com/in/carmela-moreno-1a7392148/',
-              instagram: 'https://www.instagram.com/mihogarenatlanta/',
+              facebook: 'https://www.facebook.com/profile.php?id=100086620599382',
+              // twitter: 'lusia',
+              // linkedin: 'https://www.linkedin.com/in/carmela-moreno-1a7392148/',
+              instagram: 'https://www.instagram.com/alboradahouse/',
               // website: 'https://lusia.manuel.com'
             },
             ratingsCount: 6,
             ratingsValue: 480,
-            image: 'assets/images/agents/a-1-min.jpg' 
+            image: 'assets/images/agents/irma.jpg' 
         },
         { 
             id: 2,
-            fullName: 'Carmen Barreda',
+            fullName: 'Hector Rodriguez',
             // desc: 'Phasellus sed metus leo. Donec laoreet, lacus ut suscipit convallis, erat enim eleifend nulla, at sagittis enim urna et lacus.',            
-            organization: 'Mi Hogar En Atlanta',
-            email: 'Barredarealtor@gmail.com',
-            phone: '+1 (678) 790-0109',
+            organization: 'Alborada House',
+            email: 'alboradahouserb@gmail.com',
+            phone: '+1 (678) 541-4793',
             social: {
-              facebook: '',
-              twitter: '',
-              linkedin: '',
-              instagram: '',
+              facebook: 'https://www.facebook.com/profile.php?id=100086620599382',
+              // twitter: '',
+              // linkedin: '',
+              instagram: 'https://www.instagram.com/alboradahouse/',
               // website: 'https://andy.warhol.com'
             },
             ratingsCount: 4,
             ratingsValue: 400,
-            image: 'assets/images/agents/a-2-min.jpg' 
+            image: 'assets/images/agents/hector.jpg' 
         },        
         // { 
         //     id: 3,

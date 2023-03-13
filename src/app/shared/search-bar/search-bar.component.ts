@@ -9,7 +9,7 @@ import { AppService } from '../../app.service';
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  private resultsVisible = false
+  public resultsVisible = false
   public properties: Property[];
   public property: Property;
   public byzip: any;
@@ -28,7 +28,7 @@ export class SearchBarComponent implements OnInit {
   }
   searcher(){
     // console.log(this.searchBar)
-    this.getProperties(this.searchBar, 180, 0)
+    this.getProperties(this.searchBar, 180, 1)
   }
   onClick(event): void {
     // check if click event occurred inside the content div
@@ -50,10 +50,20 @@ export class SearchBarComponent implements OnInit {
       this.fmls.cleanData(data.bundle)
     }else if(sort){
       this.fmls.limit2 = 12
-      let data = await this.fmls.getByString(limit2, offset2, sort)
-      console.log(data.bundle)
-      // let zip = await this.fmls.getByZip(limit2, offset2, sort)
-      this.udata = this.fmls.cleanDataSearcher(data.bundle)
+      if(isNaN(sort)){
+        let data = await this.fmls.getByString(limit2, offset2, sort)
+        console.log(data.total)
+        this.udata = this.fmls.cleanDataSearcher(data.bundle)
+        const cityName = this.searchBar
+        const capitalize = cityName.charAt(0).toUpperCase() + cityName.slice(1)
+        this.searchFields = {city:{id: 1, name: capitalize}}
+      }else{
+        let data = await this.fmls.getByZip(limit2, offset2, sort)
+        console.log(data.total)
+        this.searchFields = {zipCode: sort}
+        this.udata = this.fmls.cleanDataSearcher(data.bundle)
+      }
+      
     }
       let result = await this.newfilterData(this.udata); 
       // console.log(this.properties)
@@ -71,9 +81,7 @@ export class SearchBarComponent implements OnInit {
       this.resultsVisible = true
   }
   public newfilterData(data){
-    const cityName = this.searchBar
-    const capitalize = cityName.charAt(0).toUpperCase() + cityName.slice(1)
-    this.searchFields = {city:{id: 1, name: capitalize}}
+    
     console.log(this.searchFields)
 
     return this.appService.newfilterData(data, this.searchFields, this.sort, this.pagination.page, this.pagination.perPage);
