@@ -13,7 +13,7 @@
     "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build --configuration production && ng run housekey:server:production",
     "prerender": "ng run housekey:prerender",
-    "component": "ng g c shared/search-bar"
+    "component": "ng g c pages/buyer --module=app.module.ts"
   },
   "private": true,
   "dependencies": {

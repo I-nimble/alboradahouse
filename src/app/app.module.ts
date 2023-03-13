@@ -45,6 +45,7 @@ import { VerticalMenuComponent } from './theme/components/menu/vertical-menu/ver
 import { FooterComponent } from './theme/components/footer/footer.component';
 import { LockScreenComponent } from './pages/lock-screen/lock-screen.component';
 import { HttpModule } from '@angular/http';
+// import { BuyerComponent } from './pages/buyer/buyer.component';
 // import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 
 @NgModule({
@@ -62,7 +63,8 @@ import { HttpModule } from '@angular/http';
     HorizontalMenuComponent,
     VerticalMenuComponent,
     FooterComponent,
-    LockScreenComponent
+    LockScreenComponent,
+    // BuyerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }), 
@@ -87,6 +89,7 @@ import { HttpModule } from '@angular/http';
     InputFileModule.forRoot(config),
     AppRoutingModule,
     SharedModule,
+    // BuyerComponent,
     HttpModule,
     // NgxWhastappButtonModule,
   ],

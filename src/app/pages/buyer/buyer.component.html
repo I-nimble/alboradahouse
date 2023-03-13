@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p>text sample</p>
+        </div>
+        <div class="col">
+            <form [formGroup]="contactForm"  class="form-group" id="contact">
+                <h2 class="">{{'BUYER.TITLE' | translate}}</h2>
+                <h4>{{'BUYER.SUB' | translate}}</h4>
+                <!-- <p>{{'SELLER.DESCR' | translate}}</p> -->
+                    <div class="">
+                        <!-- <label for="name" class="">Name</label> -->
+                        <input matInput #name formControlName="name" type="name" id="name" name="name" class="" placeholder="Name" required/>
+                    </div>
+                    <div class="">
+                        <!-- <label for="name" class="">Name</label> -->
+                        <input matInput #last_name formControlName="last_name" type="last_name" id="last_name" name="last_name" class="" placeholder="Last Name" required/>
+                    </div>
+                    <div class="">
+                        <!-- <label for="email" class="">Email</label> -->
+                        <input matInput #email formControlName="email" type="email" id="email" name="email" class="" placeholder="Email Address" required/>
+                    </div>
+                    <div>
+                        <button mat-raised-button type="submit" class="" (click)="sendEmail()">{{'SELLER.BTN' | translate}}</button>
+                    </div>
+            </form>
+        </div>
+
+    </div>
+    
+</div>

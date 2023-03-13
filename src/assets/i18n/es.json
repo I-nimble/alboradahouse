@@ -161,6 +161,18 @@
 
     },
     "GUIDES":{
+      "BUYER": {
+        "TITLE": "GUÍA DEL COMPRADOR",
+        "DESC": "Con nuestras guías podrá hacer su sueño realidad. ¿quiere una casa bonita para usted y su familia? comience desde ya",
+        "BTN": "Leer más"
+      },
+      "SELLER": {
+        "TITLE": "GUÍA DEL VENDEDOR",
+        "DESC": "Descubre cómo nuestro equipo de agentes expertos en el sector inmobiliario de Georgia puede ayudarte a lograr tus metas de venta de propiedad.",
+        "BTN": "Leer más"
+      }
+    },
+    "BUYER":{
       "TITLE": "¿NO SABES POR DONDE COMENZAR?",
       "SUB": "DESCARGA LA GUIA DEL COMPRADOR",
       "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",

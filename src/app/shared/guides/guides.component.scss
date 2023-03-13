@@ -1,16 +1,4 @@
-@import "../../theme/styles/variables";
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-  
+@import "../../theme/styles/variables";  
   .container {
     // max-width: 400px;
     width: 100%;
@@ -19,7 +7,14 @@
     // position: relative;
     margin-bottom: 100px;
   }
-  
+  .relative{
+    position: relative;
+    padding-bottom: 35px;
+  }
+  .mat-raised-button{
+    position: absolute;
+    bottom: 0;
+  }
   #contact {
     background: #0a79b0;
     color: #ffffff;
@@ -27,9 +22,15 @@
     // margin: 50px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   }
-  .form-group{
+  .row{
     display: flex;
-    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    justify-content: space-evenly;
+  }
+  g#mq-stencil-icon-33e2e366 {
+    transform: rotate(328deg);
+    transform-origin: center center;
   }
   .form-group div{
     padding: 8px;

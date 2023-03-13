@@ -168,6 +168,18 @@
     "PRICE>": "Price (High to Low)"
   },
   "GUIDES":{
+    "BUYER": {
+      "TITLE": "BUYER'S GUIDE",
+      "DESC": "You can make your dream come true. Do you want a beautiful home for you and your family? Start now.",
+      "BTN": "Read more"
+    },
+    "SELLER": {
+      "TITLE": "SELLER'S GUIDE",
+      "DESC": "No matter the reason for selling your home, you've come to the right place. Our team of expert real estate agents in Georgia is here to help.",
+      "BTN": "Read more"
+    }
+  },
+  "BUYER":{
     "TITLE": "DON'T KNOW WHERE TO START?",
     "SUB": "DOWNLOAD THE BUYER'S GUIDE",
     "DESCR": "Nam libero tempore, cum soluta nobis est eligendi, optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus",
